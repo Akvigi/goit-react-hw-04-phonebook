@@ -6,13 +6,13 @@ import Section from "./Section/Section";
 import { ContentContainer, PageContainer } from "./styled-comp/styled";
 
 const App = () => {
-  const [contacts, setContacts] = useState([])
+  const [contacts, setContacts] = useState(JSON.parse(localStorage.getItem("contactlist")) ?? [])
   const [filter, setFilter] = useState('')
   
-  useEffect(() => {
-    const parsed = JSON.parse(localStorage.getItem("contactlist"))
-    if (parsed.length !== 0) setContacts(parsed)  
-  }, [])
+  // useEffect(() => {
+  //   const parsed = 
+  //   if (parsed.length !== 0) setContacts(parsed)  
+  // }, [])
 
   useEffect(() => {
     const string = JSON.stringify(contacts)
