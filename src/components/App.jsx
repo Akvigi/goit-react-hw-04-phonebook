@@ -49,7 +49,6 @@ const App = () => {
 
   const onDelete = (id) => {
     const toUpdate = contacts.filter(elem => elem.id !== id)
-    localStorage.setItem("contactlist", toUpdate)
     setContacts(toUpdate)
   }
 
