@@ -10,7 +10,7 @@ const App = () => {
   const [filter, setFilter] = useState('')
   
   // useEffect(() => {
-  //   const parsed = 
+  //   const parsed = JSON.parse(localStorage.getItem("contactlist"))
   //   if (parsed.length !== 0) setContacts(parsed)  
   // }, [])
 
@@ -71,13 +71,3 @@ const App = () => {
 
 
 export default App
-
-// class App extends Component {
-
- 
-
-  
-
-
-// }
-
